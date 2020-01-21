@@ -1,0 +1,32 @@
+{% extends "basic.html" %}
+{% block title %}
+    Ansible Webadmin
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-sm-3 text-center h4">
+            <a href="{% url 'host_info' %}" target="_blank">
+                <img src="/static/imgs/linux.jpg" width="150px"><br>
+                主机信息
+            </a>
+        </div>
+            <div class="col-sm-3 text-center h4">
+            <a href="{% url 'add_hosts' %}" target="_blank">
+                <img src="/static/imgs/linux.jpg" width="150px"><br>
+                添加主机
+            </a>
+        </div>
+            <div class="col-sm-3 text-center h4">
+            <a href="{% url 'add_modules' %}" target="_blank">
+                <img src="/static/imgs/linux.jpg" width="150px"><br>
+                添加模块
+            </a>
+        </div>
+            <div class="col-sm-3 text-center h4">
+            <a href="{% url 'tasks' %}" target="_blank">
+                <img src="/static/imgs/linux.jpg" width="150px"><br>
+                执行任务
+            </a>
+        </div>
+    </div>
+{% endblock %}

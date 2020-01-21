@@ -1,0 +1,4 @@
+#!/bin/bash
+cd $1
+ansible all -m setup -t /tmp/host_information &>/dev/null
+ansible-cmdb /tmp/host_information/ > ../templates/host_info.html
